@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Supernova.Application.Abstraction\Supernova.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\..\Application\Supernova.Application\Supernova.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Supernova.Application\Supernova.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Supernova.Common\Supernova.Common\Supernova.Common.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Supernova.Infrastructure\Supernova.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Supernova.Persistence\Supernova.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Extensions\" />
+  </ItemGroup>
+
+</Project>

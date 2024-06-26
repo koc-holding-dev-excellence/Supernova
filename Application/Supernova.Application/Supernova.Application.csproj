@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstractions\**" />
+    <EmbeddedResource Remove="Abstractions\**" />
+    <None Remove="Abstractions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Supernova.Domain\Supernova.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Supernova.Common\Supernova.Common\Supernova.Common.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Supernova.Persistence\Supernova.Persistence.csproj" />
+    <ProjectReference Include="..\Supernova.Application.Abstraction\Supernova.Application.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\Product\Mappings\" />
+    <Folder Include="src\User\" />
+  </ItemGroup>
+
+</Project>

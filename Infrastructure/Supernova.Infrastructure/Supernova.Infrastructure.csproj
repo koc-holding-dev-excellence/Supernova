@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Supernova.Application.Abstraction\Supernova.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\..\Application\Supernova.Application\Supernova.Application.csproj" />
+    <ProjectReference Include="..\Supernova.Common\Supernova.Common\Supernova.Common.csproj" />
+    <ProjectReference Include="..\Supernova.Persistence\Supernova.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
